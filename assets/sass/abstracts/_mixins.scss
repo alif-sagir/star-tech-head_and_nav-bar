@@ -1,0 +1,48 @@
+@mixin row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// all area main class
+.header_area_full,
+.feature_area_full,
+.about_area,
+.servicess_area,
+.contact_us_area_full,
+.map_area_full
+.footer_area
+{
+// display: none;
+}
+/* responsive_desine_mixin start*/
+@mixin xs() {
+    @media screen and (max-width: 575.9px) {
+        @content();
+    }
+}
+@mixin sm() {
+    @media (min-width: 576px) and (max-width: 767.9px) {
+        @content();
+    }
+}
+@mixin md() {
+    @media (min-width: 768px) and (max-width: 991.9px) {
+        @content();
+    }
+}
+@mixin lg() {
+    @media (min-width: 992px) and (max-width: 1279.9px) {
+        @content();
+    }
+}
+@mixin xl() {
+    @media (min-width: 1280px) and (max-width: 1399.9px) {
+        @content();
+    }
+}
+@mixin xxl() {
+    @media (min-width: 1400px) {
+        @content();
+    }
+}
+/* responsive_desine_mixin end*/

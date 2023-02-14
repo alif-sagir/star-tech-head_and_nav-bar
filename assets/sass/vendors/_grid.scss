@@ -1,0 +1,64 @@
+//make_a_grid
+
+.container {
+    width: 1300px;
+    margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root {
+    --container-width: 8.33333333;
+}
+
+.col-1 {
+    width: calc(var(--container-width) * 1%);
+}
+
+.col-2 {
+    width: calc(var(--container-width) * 2%);
+}
+
+.col-3 {
+    width: calc(var(--container-width) * 3%);
+}
+
+.col-4 {
+    width: calc(var(--container-width) * 4%);
+}
+
+.col-5 {
+    width: calc(var(--container-width) * 5%);
+}
+
+.col-6 {
+    width: calc(var(--container-width) * 6%);
+}
+
+.col-7 {
+    width: calc(var(--container-width) * 7%);
+}
+
+.col-8 {
+    width: calc(var(--container-width) * 8%);
+}
+
+.col-9 {
+    width: calc(var(--container-width) * 9%);
+}
+
+.col-10 {
+    width: calc(var(--container-width) * 10%);
+}
+
+.col-11 {
+    width: calc(var(--container-width) * 11%);
+}
+
+.col-12 {
+    width: calc(var(--container-width) * 12%);
+}
