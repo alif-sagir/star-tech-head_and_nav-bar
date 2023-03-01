@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>star tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 
@@ -108,7 +113,7 @@
             <!-- responsive_header_manu start -->
             <div class="responsive_header_manu">
                 <!-- menu_bar start-->
-                <a href="#" class="menu_bar">
+                <a href="#" class="menu_bar" onclick="add_class()">
                     <i class="fa-solid fa-bars"></i>
                 </a>
                 <!-- menu_bar end-->
@@ -137,12 +142,123 @@
             <!--responsive_header_manu end -->
         </div>
     </header>
+
+    <!-- nav_area start -->
+    <nav id="active_class" class="nav_area">
+        <div class="nav_area_content">
+            <!-- main_nav ul-->
+            <ul>
+                <!-- main_nav -->
+                <li>
+                    <a href="#">
+                        Desktop
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <!-- sub_nav_1 -->
+                    <ul class="sub_nav_1">
+                        <li><a href="#">sub_item_1</a></li>
+                        <li><a href="#">sub_item_1</a></li>
+                        <li>
+                            <a href="#">
+                                sub_item_1
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <!-- sub_nav_2 -->
+                            <ul class="sub_nav_">
+                                <li><a href="#">sub_item_2</a></li>
+                                <li><a href="#">sub_item_2</a></li>
+                                <li><a href="#">sub_item_2</a></li>
+                                <li><a href="#">sub_item_2</a></li>
+                                <li>
+                                    <a href="#">
+                                        sub_item_2
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <ul class="sub_nav_">
+                                        <li><a href="#">sub_item_2</a></li>
+                                        <li><a href="#">sub_item_2</a></li>
+                                        <li><a href="#">sub_item_2</a></li>
+                                        <li><a href="#">sub_item_2</a></li>
+                                        <li>
+                                            <a href="#">
+                                                sub_item_2
+                                                <i class="fa-solid fa-caret-right"></i>
+                                            </a>
+                                            <ul class="sub_nav_">
+                                                <li><a href="#">sub_item_2</a></li>
+                                                <li><a href="#">sub_item_2</a></li>
+                                                <li><a href="#">sub_item_2</a></li>
+                                                <li><a href="#">sub_item_2</a></li>
+                                                <li><a href="#">sub_item_2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">sub_item_1</a></li>
+                        <li><a href="#">sub_item_1</a></li>
+                    </ul>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">laptop</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+                <!-- main_nav -->
+                <li><a href="#">item_1</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     <!-- nav_area end -->
 
-
+    <!-- 
     <div class="">
         <h1>content area</h1>
-    </div>
+    </div> -->
 
 
     <!-- responsive_header_buttom start -->
@@ -198,4 +314,10 @@
     <!-- responsive_header_buttom end -->
 </body>
 
+<script>
+    function add_class() {
+        let nav_list = document.getElementById("active_class").classList.toggle("add_nav_list");
+        // let list= document.getElementById("addd_class").classList.add("responsive_nav_bar");
+    }
+</script>
 </html>
