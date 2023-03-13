@@ -421,6 +421,21 @@
                     &:hover {
                         color: #ef4a23;
                     }
+                    @include lg {
+                        border-bottom: 1px solid rgb(217 215 215);
+                    }
+    
+                    @include md {
+                        border-bottom: 1px solid rgb(217 215 215);
+                    }
+    
+                    @include sm {
+                        border-bottom: 1px solid rgb(217 215 215);
+                    }
+    
+                    @include xs {
+                        border-bottom: 1px solid rgb(217 215 215);
+                    }
                 }
 
                 ul {
@@ -434,21 +449,21 @@
                     }
                 }
 
-                @include lg {
-                    border-bottom: 1px solid rgb(217 215 215);
-                }
+                // @include lg {
+                //     border-bottom: 1px solid rgb(217 215 215);
+                // }
 
-                @include md {
-                    border-bottom: 1px solid rgb(217 215 215);
-                }
+                // @include md {
+                //     border-bottom: 1px solid rgb(217 215 215);
+                // }
 
-                @include sm {
-                    border-bottom: 1px solid rgb(217 215 215);
-                }
+                // @include sm {
+                //     border-bottom: 1px solid rgb(217 215 215);
+                // }
 
-                @include xs {
-                    border-bottom: 1px solid rgb(217 215 215);
-                }
+                // @include xs {
+                //     border-bottom: 1px solid rgb(217 215 215);
+                // }
             }
         }
 
@@ -488,10 +503,23 @@
                     text-transform: capitalize;
                     padding: 7px 15px;
                     font-weight: 600;
-
+                
                     i {
                         float: right;
                         color: #ef4a23;
+                        @include xs {
+                            transform: rotate(90deg);
+                        }
+                        @include sm {
+                            transform: rotate(90deg);
+                        }
+                        @include md {
+                            transform: rotate(90deg);
+                        }
+                        @include lg {
+                            transform: rotate(90deg);
+                        }
+                       
                     }
                 }
 
@@ -504,6 +532,19 @@
 
                     >i {
                         margin-left: 10px;
+                        @include xs {
+                            transform: rotate(0deg);
+                        }
+                        @include sm {
+                            transform: rotate(0deg);
+                        }
+                        @include md {
+                            transform: rotate(0deg);
+                        }
+                        @include lg {
+                            transform: rotate(0deg);
+                        }
+                       
                     }
                 }
 
@@ -512,6 +553,18 @@
                         opacity: 1;
                         visibility: visible;
                         border-top: 4px solid #ef4a23;
+                        @include xs {
+                            border-top: unset;
+                        }
+                        @include sm {
+                            border-top: unset;
+                        }
+                        @include md {
+                            border-top: unset;
+                        }
+                        @include lg {
+                            border-top: unset;
+                        }
                     }
                 }
 
@@ -526,6 +579,34 @@
                     left: 0;
                     border-top: 4px solid transparent;
 
+                    @include xs {
+                        position: unset;
+                        opacity: 1;
+                        visibility: visible;
+                        box-shadow: unset;
+                    }
+                    @include sm {
+                        position: unset;
+                        opacity: 1;
+                        visibility: visible;
+                        box-shadow: unset;
+                    }
+                    @include md {
+                        position: unset;
+                        opacity: 1;
+                        visibility: visible;
+                        box-shadow: unset;
+                    }
+                    @include lg {
+                        position: unset;
+                        opacity: 1;
+                        visibility: visible;
+                        box-shadow: unset;
+                    }
+                    // @include xs {
+                    //    top: unset;
+                    // }
+
                     li {
                         transition-duration: .4s;
 
@@ -534,12 +615,38 @@
                                 opacity: 1;
                                 visibility: visible;
                                 border-top: 4px solid #ef4a23;
+                                @include xs {
+                                    border-top: unset;
+                                }
+                                @include sm {
+                                    border-top: unset;
+                                }
+                                @include md {
+                                    border-top: unset;
+                                }
+                                @include lg {
+                                    border-top: unset;
+                                }
                             }
                         }
 
                         ul {
                             top: 30px;
                             left: 100%;
+
+                            @include xs {
+                                margin-left: 15px;
+                            }
+                            @include sm {
+                                margin-left: 15px;
+                            }
+                            @include md {
+                                margin-left: 15px;
+                            }
+                            @include lg {
+                                margin-left: 15px;
+                            }
+
                         }
                     }
                 }
